@@ -1,0 +1,23 @@
+GET localhost:3000/blocks
+###
+POST localhost:3000/mine
+Content-Type: application/json
+
+
+{
+    "data": "foo"
+}
+###
+GET localhost:3000/transactions
+###
+POST localhost:3000/transact
+Content-Type: application/json
+
+{
+    "recipient": "addressXXX",
+    "amount": 50
+}
+###
+GET localhost:3000/public-key
+###
+GET localhost:3000/mine-transactions
